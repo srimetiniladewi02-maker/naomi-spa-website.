@@ -1,292 +1,975 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Naomi Spa - Home Service. Relax your body, refresh your mind." />
+
+  <meta
+    name="description"
+    content="Naomi Spa - Home Service. Relax your body, refresh your mind."
+  />
+
   <title>Naomi Spa | Home Service</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
   <!-- NAVIGATION -->
   <header class="header">
+
     <a href="#home" class="brand">
       <span class="brand-mark">✦</span>
+
       <span>
         <strong>NAOMI SPA</strong>
         <small>HOME SERVICE</small>
       </span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open menu"
+    >
+      ☰
+    </button>
 
     <nav class="nav" id="navMenu">
-      <a href="#home">Home</a>
-      <a href="#treatments">Treatments</a>
-      <a href="#price">Price List</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="nav-button">Book Now</a>
+
+      <a href="#home" data-i18n="navHome">Home</a>
+
+      <a href="#treatments" data-i18n="navTreatments">
+        Treatments
+      </a>
+
+      <a href="#price" data-i18n="navPrice">
+        Price List
+      </a>
+
+      <a href="#about" data-i18n="navAbout">
+        About
+      </a>
+
+      <a
+        href="#contact"
+        class="nav-button"
+        data-i18n="navBook"
+      >
+        Book Now
+      </a>
+
+      <!-- LANGUAGE SWITCHER -->
+      <div class="language-switcher">
+
+        <button
+          class="language-btn active"
+          data-lang="en"
+        >
+          🇬🇧 EN
+        </button>
+
+        <button
+          class="language-btn"
+          data-lang="id"
+        >
+          🇮🇩 ID
+        </button>
+
+      </div>
+
     </nav>
+
   </header>
 
+
   <main>
+
     <!-- HERO -->
     <section class="hero" id="home">
+
       <div class="hero-overlay"></div>
+
       <div class="hero-content">
-        <p class="eyebrow">PREMIUM HOME SPA EXPERIENCE</p>
-        <h1>Relax Your Body.<br><em>Refresh Your Mind.</em></h1>
-        <p class="hero-text">
-          Nikmati pengalaman spa yang nyaman, tenang, dan profesional
-          langsung di tempat Anda.
+
+        <p
+          class="eyebrow"
+          data-i18n="heroEyebrow"
+        >
+          PREMIUM HOME SPA EXPERIENCE
         </p>
+
+        <h1>
+          <span data-i18n="heroTitle1">
+            Relax Your Body.
+          </span>
+          <br>
+          <em data-i18n="heroTitle2">
+            Refresh Your Mind.
+          </em>
+        </h1>
+
+        <p
+          class="hero-text"
+          data-i18n="heroText"
+        >
+          Enjoy a comfortable, peaceful, and professional spa experience
+          directly at your place.
+        </p>
+
         <div class="hero-buttons">
-          <a class="btn btn-primary" href="#treatments">Explore Treatments</a>
-          <a class="btn btn-outline" href="#contact">Book Appointment</a>
+
+          <a
+            class="btn btn-primary"
+            href="#treatments"
+            data-i18n="exploreTreatments"
+          >
+            Explore Treatments
+          </a>
+
+          <a
+            class="btn btn-outline"
+            href="#contact"
+            data-i18n="bookAppointment"
+          >
+            Book Appointment
+          </a>
+
         </div>
+
       </div>
 
+
       <div class="hero-card">
+
         <span>✦</span>
+
         <p>Naomi Spa</p>
-        <small>Luxury Wellness • Home Service</small>
+
+        <small data-i18n="heroCard">
+          Luxury Wellness • Home Service
+        </small>
+
       </div>
+
     </section>
+
 
     <!-- INTRO -->
     <section class="intro section">
+
       <div class="section-heading">
-        <p class="eyebrow">WELCOME TO NAOMI SPA</p>
-        <h2>A Moment of <span>Pure Relaxation</span></h2>
+
+        <p
+          class="eyebrow"
+          data-i18n="welcome"
+        >
+          WELCOME TO NAOMI SPA
+        </p>
+
+        <h2>
+          <span data-i18n="introTitle1">
+            A Moment of
+          </span>
+
+          <span data-i18n="introTitle2">
+            Pure Relaxation
+          </span>
+        </h2>
+
       </div>
-      <p class="intro-text">
-        Kami menghadirkan perawatan spa dengan suasana hangat dan menenangkan.
-        Pilih treatment favorit Anda dan nikmati pengalaman relaksasi yang
-        dirancang untuk membantu tubuh terasa lebih nyaman dan segar.
+
+
+      <p
+        class="intro-text"
+        data-i18n="introText"
+      >
+        We bring you spa treatments with a warm and calming atmosphere.
+        Choose your favorite treatment and enjoy a relaxing experience
+        designed to help your body feel comfortable and refreshed.
       </p>
 
+
       <div class="stats">
-        <div><strong>Professional</strong><span>Therapist Service</span></div>
-        <div><strong>Home Service</strong><span>Comfort at Your Place</span></div>
-        <div><strong>Flexible</strong><span>Booking & Extra Time</span></div>
+
+        <div>
+
+          <strong data-i18n="stat1Title">
+            Professional
+          </strong>
+
+          <span data-i18n="stat1Text">
+            Therapist Service
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong data-i18n="stat2Title">
+            Home Service
+          </strong>
+
+          <span data-i18n="stat2Text">
+            Comfort at Your Place
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong data-i18n="stat3Title">
+            Flexible
+          </strong>
+
+          <span data-i18n="stat3Text">
+            Booking & Extra Time
+          </span>
+
+        </div>
+
       </div>
+
     </section>
 
+
     <!-- TREATMENTS -->
-    <section class="treatments section" id="treatments">
+    <section
+      class="treatments section"
+      id="treatments"
+    >
+
       <div class="section-heading">
-        <p class="eyebrow">OUR SIGNATURE TREATMENTS</p>
-        <h2>Choose Your <span>Wellness Ritual</span></h2>
+
+        <p
+          class="eyebrow"
+          data-i18n="treatmentEyebrow"
+        >
+          OUR SIGNATURE TREATMENTS
+        </p>
+
+        <h2>
+
+          <span data-i18n="treatmentTitle1">
+            Choose Your
+          </span>
+
+          <span data-i18n="treatmentTitle2">
+            Wellness Ritual
+          </span>
+
+        </h2>
+
       </div>
+
 
       <div class="treatment-grid">
 
-        <!-- IMAGE 2 -->
+
+        <!-- RELAXATION MASSAGE -->
         <article class="treatment-card">
-          <img src="relaxation-massage.jpg" alt="Relaxation massage with warm oil">
+
+          <img
+            src="relaxation-massage.jpg"
+            alt="Relaxation massage with warm oil"
+          >
+
           <div class="card-content">
-            <span class="card-number">01</span>
-            <h3>Relaxation Massage</h3>
-            <p>Sentuhan relaksasi untuk membantu tubuh terasa lebih tenang dan nyaman.</p>
-            <a href="#price" class="text-link">View Price →</a>
+
+            <span class="card-number">
+              01
+            </span>
+
+            <h3 data-i18n="relaxationTitle">
+              Relaxation Massage
+            </h3>
+
+            <p data-i18n="relaxationText">
+              A relaxing touch to help your body feel calmer and more comfortable.
+            </p>
+
+            <a
+              href="#price"
+              class="text-link"
+              data-i18n="viewPrice"
+            >
+              View Price →
+            </a>
+
           </div>
+
         </article>
 
-        <!-- IMAGE 3 -->
+
+        <!-- PAIN RELIEF -->
         <article class="treatment-card">
-          <img src="pain-relief-therapy.jpg" alt="Pain relief and therapy massage">
+
+          <img
+            src="pain-relief-therapy.jpg"
+            alt="Pain relief and therapy massage"
+          >
+
           <div class="card-content">
-            <span class="card-number">02</span>
-            <h3>Pain Relief & Therapy</h3>
-            <p>Perawatan pijat untuk area tubuh yang membutuhkan perhatian lebih.</p>
-            <a href="#price" class="text-link">View Price →</a>
+
+            <span class="card-number">
+              02
+            </span>
+
+            <h3 data-i18n="painTitle">
+              Pain Relief & Therapy
+            </h3>
+
+            <p data-i18n="painText">
+              Massage treatment for areas of the body that need extra attention.
+            </p>
+
+            <a
+              href="#price"
+              class="text-link"
+              data-i18n="viewPrice"
+            >
+              View Price →
+            </a>
+
           </div>
+
         </article>
 
-        <!-- IMAGE 4 -->
+
+        <!-- BODY CONTOUR -->
         <article class="treatment-card">
-          <img src="body-contour-detox.jpg" alt="Body contour and detox treatment">
+
+          <img
+            src="body-contour-detox.jpg"
+            alt="Body contour and detox treatment"
+          >
+
           <div class="card-content">
-            <span class="card-number">03</span>
-            <h3>Body Contour & Detox</h3>
-            <p>Rangkaian treatment body care untuk pengalaman perawatan tubuh yang menyegarkan.</p>
-            <a href="#price" class="text-link">View Price →</a>
+
+            <span class="card-number">
+              03
+            </span>
+
+            <h3 data-i18n="bodyTitle">
+              Body Contour & Detox
+            </h3>
+
+            <p data-i18n="bodyText">
+              A refreshing body care treatment designed for a revitalizing experience.
+            </p>
+
+            <a
+              href="#price"
+              class="text-link"
+              data-i18n="viewPrice"
+            >
+              View Price →
+            </a>
+
           </div>
+
         </article>
 
-        <!-- IMAGE 5 + 6 -->
+
+        <!-- FOOT & HEAD -->
         <article class="treatment-card">
+
           <div class="split-images">
-            <img src="head-therapy.jpg" alt="Head therapy massage">
-            <img src="foot-therapy.jpg" alt="Foot reflexology">
+
+            <img
+              src="head-therapy.jpg"
+              alt="Head therapy massage"
+            >
+
+            <img
+              src="foot-therapy.jpg"
+              alt="Foot reflexology"
+            >
+
           </div>
+
+
           <div class="card-content">
-            <span class="card-number">04</span>
-            <h3>Foot & Head Therapy</h3>
-            <p>Relaksasi untuk kaki dan kepala dalam suasana spa yang hangat dan nyaman.</p>
-            <a href="#price" class="text-link">View Price →</a>
+
+            <span class="card-number">
+              04
+            </span>
+
+            <h3 data-i18n="footHeadTitle">
+              Foot & Head Therapy
+            </h3>
+
+            <p data-i18n="footHeadText">
+              Relaxation for your feet and head in a warm and comfortable spa atmosphere.
+            </p>
+
+            <a
+              href="#price"
+              class="text-link"
+              data-i18n="viewPrice"
+            >
+              View Price →
+            </a>
+
           </div>
+
         </article>
 
       </div>
+
     </section>
+
 
     <!-- FEATURE BANNER -->
     <section class="feature-banner">
+
       <div>
-        <p class="eyebrow">YOUR COMFORT COMES FIRST</p>
-        <h2>Bring the Spa Experience <em>to Your Home.</em></h2>
+
+        <p
+          class="eyebrow"
+          data-i18n="comfortFirst"
+        >
+          YOUR COMFORT COMES FIRST
+        </p>
+
+        <h2>
+
+          <span data-i18n="featureTitle1">
+            Bring the Spa Experience
+          </span>
+
+          <em data-i18n="featureTitle2">
+            to Your Home.
+          </em>
+
+        </h2>
+
       </div>
-      <a href="#contact" class="btn btn-primary">Book Your Session</a>
+
+
+      <a
+        href="#contact"
+        class="btn btn-primary"
+        data-i18n="bookSession"
+      >
+        Book Your Session
+      </a>
+
     </section>
 
+
     <!-- PRICE LIST -->
-    <section class="price-section section" id="price">
+    <section
+      class="price-section section"
+      id="price"
+    >
+
       <div class="section-heading">
-        <p class="eyebrow">TREATMENT & REAL PRICE</p>
-        <h2>Our <span>Price List</span></h2>
+
+        <p
+          class="eyebrow"
+          data-i18n="priceEyebrow"
+        >
+          TREATMENT & REAL PRICE
+        </p>
+
+        <h2>
+
+          <span data-i18n="priceTitle1">
+            Our
+          </span>
+
+          <span data-i18n="priceTitle2">
+            Price List
+          </span>
+
+        </h2>
+
       </div>
 
-      <div class="price-note">
-        Harga di bawah mengikuti referensi price list Anda. Silakan ubah kapan saja
-        jika harga atau layanan berubah.
+
+      <div
+        class="price-note"
+        data-i18n="priceNote"
+      >
+        The prices below follow our current price list and may change
+        if services or prices are updated.
       </div>
+
 
       <div class="price-grid">
 
+
+        <!-- PRICE 1 -->
         <div class="price-card">
+
           <div class="price-title">
+
             <span class="icon">❀</span>
-            <h3>Relaxation Massage</h3>
+
+            <h3 data-i18n="relaxationTitle">
+              Relaxation Massage
+            </h3>
+
           </div>
+
+
           <div class="table-wrap">
+
             <table>
-              <thead><tr><th>Treatment</th><th>60 Min</th><th>90 Min</th><th>120 Min</th></tr></thead>
+
+              <thead>
+
+                <tr>
+
+                  <th data-i18n="tableTreatment">
+                    Treatment
+                  </th>
+
+                  <th>60 Min</th>
+
+                  <th>90 Min</th>
+
+                  <th>120 Min</th>
+
+                </tr>
+
+              </thead>
+
+
               <tbody>
-                <tr><td>Balinese Massage</td><td>200K</td><td>280K</td><td>360K</td></tr>
-                <tr><td>Aromatherapy Massage</td><td>210K</td><td>290K</td><td>370K</td></tr>
-                <tr><td>Relaxation Massage</td><td>200K</td><td>280K</td><td>360K</td></tr>
-                <tr><td>Lomi-Lomi Massage</td><td>220K</td><td>305K</td><td>390K</td></tr>
+
+                <tr>
+                  <td>Balinese Massage</td>
+                  <td>200K</td>
+                  <td>280K</td>
+                  <td>360K</td>
+                </tr>
+
+                <tr>
+                  <td>Aromatherapy Massage</td>
+                  <td>210K</td>
+                  <td>290K</td>
+                  <td>370K</td>
+                </tr>
+
+                <tr>
+                  <td>Relaxation Massage</td>
+                  <td>200K</td>
+                  <td>280K</td>
+                  <td>360K</td>
+                </tr>
+
+                <tr>
+                  <td>Lomi-Lomi Massage</td>
+                  <td>220K</td>
+                  <td>305K</td>
+                  <td>390K</td>
+                </tr>
+
               </tbody>
+
             </table>
+
           </div>
+
         </div>
 
+
+        <!-- PRICE 2 -->
         <div class="price-card">
+
           <div class="price-title">
+
             <span class="icon">✦</span>
-            <h3>Pain Relief & Therapy</h3>
+
+            <h3 data-i18n="painTitle">
+              Pain Relief & Therapy
+            </h3>
+
           </div>
+
+
           <div class="table-wrap">
+
             <table>
-              <thead><tr><th>Treatment</th><th>60 Min</th><th>90 Min</th><th>120 Min</th></tr></thead>
+
+              <thead>
+
+                <tr>
+
+                  <th data-i18n="tableTreatment">
+                    Treatment
+                  </th>
+
+                  <th>60 Min</th>
+
+                  <th>90 Min</th>
+
+                  <th>120 Min</th>
+
+                </tr>
+
+              </thead>
+
+
               <tbody>
-                <tr><td>Deep Tissue Massage</td><td>270K</td><td>360K</td><td>450K</td></tr>
-                <tr><td>Back Neck Shoulder</td><td>200K</td><td>280K</td><td>360K</td></tr>
-                <tr><td>Therapeutic Massage</td><td>230K</td><td>315K</td><td>400K</td></tr>
-                <tr><td>Signature Massage</td><td>300K</td><td>400K</td><td>500K</td></tr>
+
+                <tr>
+                  <td>Deep Tissue Massage</td>
+                  <td>270K</td>
+                  <td>360K</td>
+                  <td>450K</td>
+                </tr>
+
+                <tr>
+                  <td>Back Neck Shoulder</td>
+                  <td>200K</td>
+                  <td>280K</td>
+                  <td>360K</td>
+                </tr>
+
+                <tr>
+                  <td>Therapeutic Massage</td>
+                  <td>230K</td>
+                  <td>315K</td>
+                  <td>400K</td>
+                </tr>
+
+                <tr>
+                  <td>Signature Massage</td>
+                  <td>300K</td>
+                  <td>400K</td>
+                  <td>500K</td>
+                </tr>
+
               </tbody>
+
             </table>
+
           </div>
+
         </div>
 
+
+        <!-- PRICE 3 -->
         <div class="price-card">
+
           <div class="price-title">
+
             <span class="icon">◌</span>
-            <h3>Body Contour & Detox</h3>
+
+            <h3 data-i18n="bodyTitle">
+              Body Contour & Detox
+            </h3>
+
           </div>
+
+
           <div class="table-wrap">
+
             <table>
-              <thead><tr><th>Treatment</th><th>60 Min</th><th>90 Min</th><th>120 Min</th></tr></thead>
+
+              <thead>
+
+                <tr>
+
+                  <th data-i18n="tableTreatment">
+                    Treatment
+                  </th>
+
+                  <th>60 Min</th>
+
+                  <th>90 Min</th>
+
+                  <th>120 Min</th>
+
+                </tr>
+
+              </thead>
+
+
               <tbody>
-                <tr><td>Lymphatic Drainage</td><td>330K</td><td>440K</td><td>550K</td></tr>
-                <tr><td>Slimming Massage</td><td>350K</td><td>470K</td><td>590K</td></tr>
-                <tr><td>Madero Massage</td><td>380K</td><td>510K</td><td>640K</td></tr>
+
+                <tr>
+                  <td>Lymphatic Drainage</td>
+                  <td>330K</td>
+                  <td>440K</td>
+                  <td>550K</td>
+                </tr>
+
+                <tr>
+                  <td>Slimming Massage</td>
+                  <td>350K</td>
+                  <td>470K</td>
+                  <td>590K</td>
+                </tr>
+
+                <tr>
+                  <td>Madero Massage</td>
+                  <td>380K</td>
+                  <td>510K</td>
+                  <td>640K</td>
+                </tr>
+
               </tbody>
+
             </table>
+
           </div>
+
         </div>
 
+
+        <!-- PRICE 4 -->
         <div class="price-card">
+
           <div class="price-title">
+
             <span class="icon">◉</span>
-            <h3>Foot & Head Therapy</h3>
+
+            <h3 data-i18n="footHeadTitle">
+              Foot & Head Therapy
+            </h3>
+
           </div>
+
+
           <div class="table-wrap">
+
             <table>
-              <thead><tr><th>Treatment</th><th>30 Min</th><th>60 Min</th></tr></thead>
+
+              <thead>
+
+                <tr>
+
+                  <th data-i18n="tableTreatment">
+                    Treatment
+                  </th>
+
+                  <th>30 Min</th>
+
+                  <th>60 Min</th>
+
+                </tr>
+
+              </thead>
+
+
               <tbody>
-                <tr><td>Foot Reflexology</td><td>110K</td><td>190K</td></tr>
-                <tr><td>Head & Face Massage</td><td>120K</td><td>210K</td></tr>
+
+                <tr>
+                  <td>Foot Reflexology</td>
+                  <td>110K</td>
+                  <td>190K</td>
+                </tr>
+
+                <tr>
+                  <td>Head & Face Massage</td>
+                  <td>120K</td>
+                  <td>210K</td>
+                </tr>
+
               </tbody>
+
             </table>
+
           </div>
+
         </div>
 
       </div>
+
     </section>
+
 
     <!-- ABOUT -->
-    <section class="about section" id="about">
+    <section
+      class="about section"
+      id="about"
+    >
+
       <div class="about-content">
-        <p class="eyebrow">WHY CHOOSE NAOMI SPA</p>
-        <h2>Relaxation Designed <span>For You</span></h2>
-        <p>
-          Setiap sesi dirancang agar Anda dapat menikmati waktu istirahat yang
-          nyaman tanpa perlu meninggalkan tempat Anda.
+
+        <p
+          class="eyebrow"
+          data-i18n="whyChoose"
+        >
+          WHY CHOOSE NAOMI SPA
         </p>
+
+
+        <h2>
+
+          <span data-i18n="aboutTitle1">
+            Relaxation Designed
+          </span>
+
+          <span data-i18n="aboutTitle2">
+            For You
+          </span>
+
+        </h2>
+
+
+        <p data-i18n="aboutText">
+          Every session is designed so you can enjoy a comfortable
+          moment of rest without having to leave your place.
+        </p>
+
+
         <ul>
-          <li>✓ Professional home service</li>
-          <li>✓ Flexible treatment duration</li>
-          <li>✓ Warm and relaxing spa experience</li>
-          <li>✓ Easy booking via WhatsApp</li>
+
+          <li data-i18n="aboutList1">
+            ✓ Professional home service
+          </li>
+
+          <li data-i18n="aboutList2">
+            ✓ Flexible treatment duration
+          </li>
+
+          <li data-i18n="aboutList3">
+            ✓ Warm and relaxing spa experience
+          </li>
+
+          <li data-i18n="aboutList4">
+            ✓ Easy booking via WhatsApp
+          </li>
+
         </ul>
+
       </div>
+
+
       <div class="about-price-image">
-        <img src="price-list.jpg" alt="Naomi Spa treatment price list">
+
+        <img
+          src="price-list.jpg"
+          alt="Naomi Spa treatment price list"
+        >
+
       </div>
+
     </section>
+
 
     <!-- CONTACT -->
-    <section class="contact section" id="contact">
-      <div class="contact-box">
-        <p class="eyebrow">READY TO RELAX?</p>
-        <h2>Book Your <span>Spa Session</span></h2>
-        <p>Klik tombol WhatsApp dan kami akan membantu Anda memilih treatment.</p>
+    <section
+      class="contact section"
+      id="contact"
+    >
 
-        <!-- GANTI NOMOR WHATSAPP DI BAGIAN href -->
-        <a class="btn btn-primary big-button"
-           href="https://wa.me/6289531612114?text=Hello%20Naomi%20Spa%2C%20I%20would%20like%20to%20book%20a%20treatment."
-           target="_blank" rel="noopener">
-           WhatsApp Booking
+      <div class="contact-box">
+
+        <p
+          class="eyebrow"
+          data-i18n="readyRelax"
+        >
+          READY TO RELAX?
+        </p>
+
+
+        <h2>
+
+          <span data-i18n="contactTitle1">
+            Book Your
+          </span>
+
+          <span data-i18n="contactTitle2">
+            Spa Session
+          </span>
+
+        </h2>
+
+
+        <p data-i18n="contactText">
+          Click the WhatsApp button and we will help you choose your treatment.
+        </p>
+
+
+        <a
+          class="btn btn-primary big-button"
+          href="https://wa.me/6289531612114?text=Hello%20Naomi%20Spa%2C%20I%20would%20like%20to%20book%20a%20treatment."
+          target="_blank"
+          rel="noopener"
+          data-i18n="whatsappBooking"
+        >
+          WhatsApp Booking
         </a>
 
+
         <div class="contact-details">
-          <span>📞 +62 895-3161-2114</span>
-          <span>📍 Bali, Indonesia</span>
+
+          <span>
+            📞 +62 895-3161-2114
+          </span>
+
+          <span>
+            📍 Bali, Indonesia
+          </span>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
+
 
   <!-- FOOTER -->
   <footer class="footer">
+
     <div class="footer-brand">
+
       <strong>NAOMI SPA</strong>
+
       <span>HOME SERVICE</span>
+
     </div>
-    <p>Relax your body, refresh your mind.</p>
-    <p class="copyright">© <span id="year"></span> Naomi Spa. All rights reserved.</p>
+
+
+    <p data-i18n="footerText">
+      Relax your body, refresh your mind.
+    </p>
+
+
+    <p class="copyright">
+
+      ©
+
+      <span id="year"></span>
+
+      Naomi Spa.
+
+      <span data-i18n="rights">
+        All rights reserved.
+      </span>
+
+    </p>
+
   </footer>
 
-  <button id="scrollTop" class="scroll-top" aria-label="Back to top">↑</button>
+
+  <button
+    id="scrollTop"
+    class="scroll-top"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
 
   <script src="script.js"></script>
+
 </body>
 </html>
